@@ -1,4 +1,7 @@
 package com.braincode.backend.alfa;
 
-public class AlfaNotFoundException {
+class AlfaNotFoundException extends RuntimeException {
+    AlfaNotFoundException(Long id) {
+        super("Could not find alfa " + id);
+    }
 }

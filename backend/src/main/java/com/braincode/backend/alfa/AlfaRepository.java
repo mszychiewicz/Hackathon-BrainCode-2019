@@ -1,4 +1,6 @@
 package com.braincode.backend.alfa;
 
-public interface AlfaRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface AlfaRepository extends JpaRepository<Alfa, Long> {
 }
